@@ -1,0 +1,28 @@
+<html>
+<header>
+    <h4>Write a JavaScript program to create a new string of 4 copies of the last 3 characters of a 
+        given original string. The length of the given string must be 3 and above</h4>
+</header>
+
+<body>
+</body>
+
+</html>
+<script>
+    function newstring(str)
+{
+  if (str.length >= 3) {
+
+    copies_string = str.substring(str.length - 3);
+    return copies_string + copies_string + copies_string +copies_string;
+  }
+  else
+    return false;
+}
+
+const string = prompt('Enter a string: ');
+
+const result = newstring(string);
+console.log(result);
+document.write("Copies of string is: " + result);
+</script>
