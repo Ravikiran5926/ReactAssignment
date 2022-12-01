@@ -1,0 +1,33 @@
+<html>
+<header>
+    <h4>Write a JavaScript program to find the number which appears most in a given array of 
+        integers.</h4>
+</header>
+
+<body>
+</body>
+
+</html>
+<script>
+    function array(arr) {
+        var num = [],
+            ans = 0;
+
+        for (var i = 0; i < 10; i++) {
+            num.push(0);
+        }
+        for (var i = 0; i < arr.length; i++) {
+            num[arr[i] - 1]++;
+            if (num[arr[i] - 1] > num[ans]) {
+                ans = arr[i] - 1;
+            }
+        }
+        return ans + 1;
+    }
+
+    const arr = [1, 2, 3, 2, 2, 8, 1, 9]
+
+    const result = array(arr);
+    console.log(result);
+    document.write("find the number which appears most in a given array : " + result);
+</script>

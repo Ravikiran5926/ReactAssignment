@@ -1,0 +1,25 @@
+<html>
+<header>
+    <h4>Write a JavaScript program to compute the sum of absolute differences of consecutive 
+        numbers of a given array of integers </h4>
+</header>
+
+<body>
+</body>
+
+</html>
+<script>
+ function sum(arr) {
+	var result = 0;
+	for (var i = 1; i < arr.length; i++) {
+		result += Math.abs(arr[i] - arr[i - 1]);
+	}
+	return result;
+}
+
+console.log(sum([1, 2, 3, 2, -5]));
+
+  
+    document.writeln("Sum Adjacent difference : "+sum([1, 2, 3, 2, -5]))
+
+</script>

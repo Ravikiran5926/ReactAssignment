@@ -1,0 +1,33 @@
+<html>
+<header>
+    <h4>Write a JavaScript program to find the maximal difference among all possible pairs of a given 
+        array of integers.
+         </h4>
+</header>
+
+<body>
+</body>
+
+</html>
+<script>
+    function arraymaxdiff(arr) {
+
+var max_result = 0;
+
+for(var j=0;j<arr.length;j++)
+   {
+    for(var k=0; k!=j && k<arr.length; k++)
+    {
+        var diff = Math.abs(arr[j]-arr[k]);
+        max_result = Math.max(max_result, diff);
+    }
+}
+return max_result;
+} 
+
+const arr = [15,1,20,32]
+
+const result = arraymaxdiff(arr);
+console.log(result);
+document.write("Maximal difference among all possible pairs in array: " + result);
+</script>
