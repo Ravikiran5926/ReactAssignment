@@ -1,0 +1,27 @@
+<html>
+<head> 
+</head>
+
+<body>
+ 
+    <h2>Class concept in javascript...</h2>
+    <button type="button" id="btnAvg" onclick="funAvg()">avrage</button>
+    
+   <script>
+        funAvg = () => {
+
+            countAvg = (...args)=>{
+                for(let i=0; i<args.length;i++){
+                    sum=+args[i];
+                    
+                }
+                return sum/args.length;
+            }
+            
+        
+            document.write("the avrage is: "+countAvg(12,7,9,15,20,25))
+        }
+        
+   </script>
+ </body>
+</html>
