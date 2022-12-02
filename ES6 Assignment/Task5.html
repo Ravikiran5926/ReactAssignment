@@ -1,0 +1,24 @@
+<html>
+<header> Create an arrow function by which you will take input of string and you check given 
+    string is palindrome or not.
+    </header>
+
+<body></body>
+
+
+<script>
+    var name = prompt("Enter Name: ");
+const isPalindrome = name => {
+  const midPoint = name.length / 2;
+  for (let i = 0; i < midPoint && i < name.length; i++) {
+    if (name[i] != name[name.length - 1 - i]) {
+      console.log(" Not Palindrome");
+      return;
+    }
+  }
+  console.log("Palindrome");
+}
+isPalindrome(name);
+
+</script>
+</html>
